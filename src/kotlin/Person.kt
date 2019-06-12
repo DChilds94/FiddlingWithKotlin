@@ -14,13 +14,6 @@ abstract class Person(var firstName : String,  var lastName: String ) {
     abstract fun getAddress():String
 }
 
-//open class Person { // open overrides the default final class behaviour and allows you to inherit from the class
-//    var firstName : String = ""
-//    var lastName : String = ""
-//
-//    open fun getName() : String = "$firstName $lastName" // same as above
-//}
-
 
 class Student(firstName: String, lastName: String,_id: Int)
     : Person(firstName, lastName) { // Person() is used to call the default constructor
@@ -45,3 +38,11 @@ class Student(firstName: String, lastName: String,_id: Int)
         return ""
     }
 }
+
+
+//open class Person { // open overrides the default final class behaviour and allows you to inherit from the class
+//    var firstName : String = ""
+//    var lastName : String = ""
+//
+//    open fun getName() : String = "$firstName $lastName" // same as above
+//}
