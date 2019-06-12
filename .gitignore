@@ -1,0 +1,10 @@
+*.iml
+*.ipr
+.idea/
+/local.properties
+.DS_Store
+/captures
+/out
+/src/META-INF
+
+
