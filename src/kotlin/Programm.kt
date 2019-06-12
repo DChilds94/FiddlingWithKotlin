@@ -18,3 +18,4 @@ fun main() {
 
 data class Human(val id: Int, val name: String)
 //useful if you need to store a class in a collection.
+// TODO look into dataclasses further

@@ -37,6 +37,12 @@ class Student(firstName: String, lastName: String,_id: Int)
     override fun getAddress(): String {
         return ""
     }
+
+    fun enrole(courseName : String) {
+        val course = Courses.allCourses
+            .filter{ it.title == courseName }
+            .firstOrNull()
+    }
 }
 
 
@@ -46,3 +52,6 @@ class Student(firstName: String, lastName: String,_id: Int)
 //
 //    open fun getName() : String = "$firstName $lastName" // same as above
 //}
+
+
+// TODO split Student and Person into separate files
