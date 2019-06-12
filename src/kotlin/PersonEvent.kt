@@ -1,7 +1,7 @@
 sealed class PersonEvent {
     object Awake : PersonEvent()
     object Asleep : PersonEvent()
-    class Eating(val food: String) : PersonEvent()
+    data class Eating(val food: String) : PersonEvent()
 }
 
 fun handlePersonEvent(event: PersonEvent) {
@@ -17,6 +17,3 @@ fun main () {
     handlePersonEvent(event = PersonEvent.Awake)
     handlePersonEvent(event = PersonEvent.Eating("Cheese"))
 }
-
-
-
