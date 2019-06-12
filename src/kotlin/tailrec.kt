@@ -8,5 +8,3 @@ fun main() {
 tailrec fun fib(n: Int, a: BigInteger, b: BigInteger): BigInteger{
     return if (n == 0 ) b else fib(n - 1 , a + b, a)
 }
-
-// 1, 1, 2, 3, 5, 8, 13,
