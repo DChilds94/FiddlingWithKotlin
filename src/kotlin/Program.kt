@@ -2,6 +2,7 @@
 fun main(){
     display("Hello World, from Kotlin")
     log("Hello World from log function")
+
 }
 
 fun display(message: String) : Boolean {
