@@ -2,9 +2,12 @@ package main
 
 fun main() {
   val functionalFibonacci = FunctionalFibonacci()
-  functionalFibonacci.calFibonacci(8) { n -> println(n)}
-  functionalFibonacci.calFibonacci(5) { println(it)}
-  functionalFibonacci.calFibonacci(3, ::println)
+  var total = 0
+
+  functionalFibonacci.calFibonacci(8) {it -> total += it}
+  println(total)
+
+
 }
 
 class FunctionalFibonacci {
