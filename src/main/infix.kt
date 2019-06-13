@@ -5,14 +5,15 @@ fun main() {
     val h2 = Header("h2")
     val h3 = h1 plus h2
 
-    println(h3.name)
+    println(h3)
 
     val h4 = h1 + h2
-    println(h4.name)
+    println(h4)
 }
 
-class Header(var name: String) {}
+class Header(var name: String)
 
-infix operator fun Header.plus(other: Header) : Header{
-    return Header(this.name + other.name)
+infix operator fun Header.plus(other: Header) : String{
+    var newHeader =  Header(this.name + other.name)
+    return newHeader.name
 }

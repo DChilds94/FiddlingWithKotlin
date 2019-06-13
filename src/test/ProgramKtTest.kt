@@ -5,7 +5,7 @@ import main.log
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class ProgramTest {
+class ProgramKtTest {
 
     @Test
     fun displayReturnsTheCorrectString() {
