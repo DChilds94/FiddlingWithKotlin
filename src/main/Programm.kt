@@ -1,4 +1,4 @@
-
+package main
 fun main() {
     var daniel = Human(1, "Daniel")
     var childs = Human(1, "Daniel")

@@ -1,3 +1,5 @@
+package main
+
 fun main() {
     val text = "With    multiple \t whitespace"
     println(text)

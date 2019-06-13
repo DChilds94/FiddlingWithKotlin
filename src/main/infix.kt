@@ -1,3 +1,5 @@
+package main
+
 fun main() {
     val h1 = Header("h1")
     val h2 = Header("h2")

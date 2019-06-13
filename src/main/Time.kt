@@ -1,3 +1,5 @@
+package main
+
 interface Time {
     fun setTime(hours: Int, mins: Int = 0, secs: Int = 0) // this acts as the default method which allows you to expand the interface in the future
     fun setTime(time: MyTime) = setTime(time.hours) // example of expanding the interface using the default method

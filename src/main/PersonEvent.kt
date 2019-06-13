@@ -1,3 +1,5 @@
+package main
+
 sealed class PersonEvent {
     object Awake : PersonEvent()
     object Asleep : PersonEvent()
